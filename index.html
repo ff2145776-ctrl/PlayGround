@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <title>GTA Mobile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="gameShell">
+      <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+      <div id="hud">
+        <div class="panel title-panel">
+          <div class="brand">GTA MOBILE</div>
+          <div id="missionText">Mission: Collect cash</div>
+        </div>
+
+        <div class="panel stats-panel">
+          <div class="stat"><span>Cash</span><strong id="cashValue">$0</strong></div>
+          <div class="stat"><span>Health</span><strong id="healthValue">100%</strong></div>
+          <div class="stat"><span>Heat</span><strong id="heatValue">0</strong></div>
+        </div>
+      </div>
+
+      <div id="messageBox">Cruise the city and get the cash.</div>
+
+      <div id="touchControls" aria-label="Touch controls">
+        <div class="action-group left-group">
+          <button class="pad-btn" data-touch="left">◀</button>
+          <button class="pad-btn" data-touch="right">▶</button>
+        </div>
+        <div class="action-group right-group">
+          <button class="pad-btn" data-touch="up">▲</button>
+          <button class="pad-btn" data-touch="down">▼</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
